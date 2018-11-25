@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebDriverTest.Automation
+namespace Framework.Automation
 {
     [TestFixture]
     class Automation

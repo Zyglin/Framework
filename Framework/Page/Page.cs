@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
-namespace WebDriverTest.Page
+namespace Framework.Page
 {
     class PageHome
     {

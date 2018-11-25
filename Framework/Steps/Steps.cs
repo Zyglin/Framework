@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium;
-using WebDriverTest.Page;
+﻿using Framework.Page;
+using OpenQA.Selenium;
 
 namespace Framework
 {
