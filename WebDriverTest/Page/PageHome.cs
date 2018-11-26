@@ -11,16 +11,16 @@ namespace Framework.Page
         private IWebDriver driver;
 
         [FindsBy(How = How.XPath, Using = "//a[@class='fw700 fs-16 bold']")]
-        private IWebElement expLink;
+        private IWebElement suggestionsAndDirectionsLink;
 
         [FindsBy(How = How.XPath, Using = "//div[@id='exploreourbestofferscarousel']//div[@class='carousel-caption']//a")]
-        public IWebElement firstcity;
+        private IWebElement firstcity;
 
         [FindsBy(How = How.XPath, Using = "//a[@class='btn btn-danger btn-lg pt-0 pb-0 pr-20 destination-btn-fix']//")]
-        public IWebElement buttonResult;
+        private IWebElement buttonResult;
 
 
-        public IWebElement ExpLink { get { return expLink; } }
+        public IWebElement ExpLink { get { return suggestionsAndDirectionsLink; } }
         public IWebElement FirstCity { get { return firstcity; } }
         public IWebElement ButtonResult { get { return buttonResult; } }
 
