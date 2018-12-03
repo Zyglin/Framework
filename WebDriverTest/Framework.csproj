@@ -63,9 +63,9 @@
   <ItemGroup>
     <Compile Include="Automation\Automation.cs" />
     <Compile Include="Instance\Instance.cs" />
-    <Compile Include="Page\PageInformationAboutCityAndBookTicket.cs" />
-    <Compile Include="Page\PageSpecialOffer.cs" />
-    <Compile Include="Page\PageHome.cs" />
+    <Compile Include="Page\InformationAboutCityAndBookTicketPage.cs" />
+    <Compile Include="Page\SpecialOfferPage.cs" />
+    <Compile Include="Page\HomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\Steps.cs" />
   </ItemGroup>
