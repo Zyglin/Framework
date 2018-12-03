@@ -3,7 +3,7 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace Framework.Page
 {
-    class PageSpecialOffer
+    class SpecialOfferPage
     {
 
         private const string url = "http://www.turkishairlines.com";
@@ -14,33 +14,25 @@ namespace Framework.Page
         private IWebElement fieldDirection;
 
         [FindsBy(How = How.XPath, Using = "//a[@class='btn btn-danger bold']//")]
-        private IWebElement buttonResult;
-
+        private IWebElement buttonBookIstambul;
 
         public IWebElement FieldDirection { get { return fieldDirection; } }
-        public IWebElement ButtonResult { get { return buttonResult; } }
+        public IWebElement ButtonBookIstambul { get { return buttonBookIstambul; } }
 
-        public PageSpecialOffer(IWebDriver driver)
+        public SpecialOfferPage(IWebDriver driver)
         {
             this.driver = driver;
             PageFactory.InitElements(this.driver, this);
         }
 
-        public void OpenPage()
-        {
-            driver.Navigate().GoToUrl(url);
-        }
-
         public string AutoFieldDirectionResult()
         {
-
-            return FieldDirection.Text;
-          
+            return FieldDirection.Text;          
         }
         
-        public string ButtonResultText()
+        public void ClickOnIstanbulToBook()
         {
-            return buttonResult.Text;
+            buttonBookIstambul.Click();
         }
     }
 }

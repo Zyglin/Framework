@@ -19,32 +19,32 @@ namespace Framework
 
         public void SelectSuggestionsAndDirectionsLink()
         {
-            PageHome selectPage = new PageHome(driver);
+            HomePage selectPage = new HomePage(driver);
             selectPage.OpenPage();
             selectPage.ClickOnTheSuggestionsAndDirectionsLink();
         }
 
         public string AutomaticTextAppearance()
         {
-            PageSpecialOffer selectPage = new PageSpecialOffer(driver);
+            SpecialOfferPage selectPage = new SpecialOfferPage(driver);
             return selectPage.AutoFieldDirectionResult();
         }
 
         public void SelectnIstanbulToBook()
         {
-            PageSpecialOffer selectPage = new PageSpecialOffer(driver);
+            SpecialOfferPage selectPage = new SpecialOfferPage(driver);
             selectPage.ClickOnIstanbulToBook();
         }
 
         public string InformationAboutCity()
         {
-            PageInformationAboutCityAndBookTicket selectPage = new PageInformationAboutCityAndBookTicket(driver);
+            InformationAboutCityAndBookTicketPage selectPage = new InformationAboutCityAndBookTicketPage(driver);
             return selectPage.InformationAboutCityWhereBookTicket.Text;
         }
 
         public string InformationButtonBookTicketText()
         {
-            PageInformationAboutCityAndBookTicket selectPage = new PageInformationAboutCityAndBookTicket(driver);
+            InformationAboutCityAndBookTicketPage selectPage = new InformationAboutCityAndBookTicketPage(driver);
             return selectPage.ButtonBookTicket.Text;
         }
     }

@@ -23,7 +23,6 @@ namespace Framework
         {
             driver.Quit();
             driver = null;
-
         }
     }
 }
