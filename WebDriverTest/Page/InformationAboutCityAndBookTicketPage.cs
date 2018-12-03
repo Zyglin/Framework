@@ -11,7 +11,7 @@ namespace Framework.Page
         [FindsBy(How = How.XPath, Using = "//h1[@class='fs-60 pt-0 mt-0 mb-30 1h-55']//")]
         private IWebElement informationAboutCityWhereBookTicket;
 
-        [FindsBy(How = How.XPath, Using = "//a[@class='btn btn-danger btn-lg pt-0 pb-0 pr-20 destination-btn-fix']//")]
+        [FindsBy(How = How.XPath, Using = "//a[@class='destination-btn-fix']//")]
         private IWebElement buttonBookTicket;
 
 
